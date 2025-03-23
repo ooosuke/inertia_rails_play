@@ -1,0 +1,18 @@
+current directory: /Users/dsakai/works/inertia_rails_play/vendor/bundle/ruby/3.3.0/gems/racc-1.8.1/ext/racc/cparse
+/Users/dsakai/.anyenv/envs/rbenv/versions/3.3.0/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/dsakai/works/inertia_rails_play/vendor/bundle/ruby/3.3.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20250324-90992-d28l08 sitelibdir\=./.gem.20250324-90992-d28l08 clean
+
+current directory: /Users/dsakai/works/inertia_rails_play/vendor/bundle/ruby/3.3.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20250324-90992-d28l08 sitelibdir\=./.gem.20250324-90992-d28l08
+compiling cparse.c
+linking shared-object racc/cparse.bundle
+
+current directory: /Users/dsakai/works/inertia_rails_play/vendor/bundle/ruby/3.3.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20250324-90992-d28l08 sitelibdir\=./.gem.20250324-90992-d28l08 install
+/usr/bin/install -c -m 0755 cparse.bundle ./.gem.20250324-90992-d28l08/racc
+
+current directory: /Users/dsakai/works/inertia_rails_play/vendor/bundle/ruby/3.3.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20250324-90992-d28l08 sitelibdir\=./.gem.20250324-90992-d28l08 clean
