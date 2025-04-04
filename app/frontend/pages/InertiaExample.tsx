@@ -15,7 +15,7 @@ export default function InertiaExample({ name }: { name: string }) {
       <Head title="Inertia + Vite Ruby + React Example" />
 
       <div className={cs.root}>
-        <h1 className={cs.h1}>Hello {name}!</h1>
+        <h1 className={cs.h1}>Hello {name}!!!</h1>
 
         <div>
           <a href="https://inertia-rails.dev" target="_blank">
@@ -38,6 +38,8 @@ export default function InertiaExample({ name }: { name: string }) {
         </div>
 
         <h2 className={cs.h2}>Inertia + Vite Ruby + React</h2>
+
+        <p>kakikae</p>
 
         <div className="card">
           <button

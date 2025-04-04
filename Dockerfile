@@ -43,4 +43,4 @@ EXPOSE 3000
 SHELL ["/bin/bash", "-c"]
 
 # Run Rails server by default
-CMD ["bin/rails", "server", "-b", "0.0.0.0"]
+CMD ["bin/dev"]

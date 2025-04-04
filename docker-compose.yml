@@ -13,8 +13,10 @@ services:
       RAILS_ENV: development
       NODE_ENV: development
       WEB_CONCURRENCY: 0
+      VITE_RUBY_HOST: "0.0.0.0"
     ports:
       - "3000:3000"
+      - "3036:3036"
     depends_on:
       - db
 

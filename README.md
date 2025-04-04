@@ -1,24 +1,53 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a Ruby on Rails application using [Inertia.js](https://inertiajs.com/) and [Vite](https://vitejs.dev/) for modern frontend development.
 
-Things you may want to cover:
+## ✨ Features
 
-* Ruby version
+- Ruby on Rails (API backend)
+- Inertia.js + React (or Vue) frontend
+- Vite-based asset pipeline
+- MySQL / PostgreSQL database
+- Docker & Docker Compose support (optional)
 
-* System dependencies
+---
 
-* Configuration
+## 🔧 Requirements
 
-* Database creation
+- Ruby 3.3.0
+- Node.js (v18+ or v20+)
+- Yarn (if using)
+- MySQL / PostgreSQL
+- Redis (if using Sidekiq or caching)
+- Docker / Docker Compose (for development container)
 
-* Database initialization
+---
 
-* How to run the test suite
+## 🚀 Getting Started
 
-* Services (job queues, cache servers, search engines, etc.)
+### 1. Clone the repo
 
-* Deployment instructions
+```bash
+git clone https://github.com/ooosuke/inertia_rails_play.git
+cd inertia_rails_play
+```
 
-* ...
+### 2. Setup
+
+```bash
+docker componse build
+```
+
+### 3. Start app
+
+```bash
+docker compose up
+```
+
+## example
+
+```bash
+rails new . --skip-js --skip-asset-pipeline
+bundle add inertia_rails
+bin/rails generate inertia:install
+```
