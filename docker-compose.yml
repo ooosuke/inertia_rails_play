@@ -2,10 +2,17 @@ version: '3.8'
 
 services:
   app:
-    build: .
-    command: ./bin/dev
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: dev
     volumes:
-      - .:/rails
+      - .:/rails:cached
+      - bundle:/usr/local/bundle
+    environment:
+      RAILS_ENV: development
+      NODE_ENV: development
+      WEB_CONCURRENCY: 0
     ports:
       - "3000:3000"
     depends_on:
@@ -23,3 +30,4 @@ services:
 
 volumes:
   mysql_data:
+  bundle:

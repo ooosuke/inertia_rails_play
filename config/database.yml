@@ -1,4 +1,4 @@
-# MySQL. Versions 5.6.4 and up are supported.
+# MySQL. Versions 5.5.8 and up are supported.
 #
 # Install the MySQL driver
 #   gem install mysql2
@@ -49,20 +49,7 @@ test:
 # for a full overview on how database connection configuration can be specified.
 #
 production:
-  primary: &primary_production
-    <<: *default
-    database: inertia_rails_play_production
-    username: inertia_rails_play
-    password: <%= ENV["INERTIA_RAILS_PLAY_DATABASE_PASSWORD"] %>
-  cache:
-    <<: *primary_production
-    database: inertia_rails_play_production_cache
-    migrations_paths: db/cache_migrate
-  queue:
-    <<: *primary_production
-    database: inertia_rails_play_production_queue
-    migrations_paths: db/queue_migrate
-  cable:
-    <<: *primary_production
-    database: inertia_rails_play_production_cable
-    migrations_paths: db/cable_migrate
+  <<: *default
+  database: inertia_rails_play_production
+  username: inertia_rails_play
+  password: <%= ENV["INERTIA_RAILS_PLAY_DATABASE_PASSWORD"] %>
