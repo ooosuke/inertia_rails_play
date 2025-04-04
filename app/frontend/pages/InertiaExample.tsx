@@ -39,7 +39,7 @@ export default function InertiaExample({ name }: { name: string }) {
 
         <h2 className={cs.h2}>Inertia + Vite Ruby + React</h2>
 
-        <p>kakikae</p>
+        <p>kakikaetemita</p>
 
         <div className="card">
           <button

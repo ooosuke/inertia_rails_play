@@ -8,14 +8,5 @@ export default defineConfig({
     react(),
     tailwindcss(),
     RubyPlugin(),
-  ],
-  server: {
-    port: 3036,
-    host: '0.0.0.0',
-    hmr: {
-      host: 'localhost',
-      protocol: 'ws',
-      port: 3036,
-    }
-  }
+  ]
 })
