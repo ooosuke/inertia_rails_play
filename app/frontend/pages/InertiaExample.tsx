@@ -4,6 +4,15 @@ import { useState } from 'react'
 import inertiaSvg from '/assets/inertia.svg'
 import reactSvg from '/assets/react.svg'
 import viteRubySvg from '/assets/vite_ruby.svg'
+import styled from '@emotion/styled'
+
+const Title = styled.h1`
+  color: red;
+`
+
+const StyledDix = styled.div`
+  color: blue;
+`
 
 import cs from './InertiaExample.module.css'
 
@@ -16,6 +25,10 @@ export default function InertiaExample({ name }: { name: string }) {
 
       <div className={cs.root}>
         <h1 className={cs.h1}>Hello {name}!!!</h1>
+
+        <Title>テストテスト</Title>
+
+        <StyledDix>テストテスト</StyledDix>
 
         <div>
           <a href="https://inertia-rails.dev" target="_blank">
