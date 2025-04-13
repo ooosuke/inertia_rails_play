@@ -16,9 +16,9 @@ const New = () => {
     <form onSubmit={submit}>
       <label htmlFor="first_name">First name:</label>
 
-      <label htmlFor="nanme">name:</label>
+      <label htmlFor="name">name:</label>
       <input
-        id="nanme"
+        id="name"
         value={data.name}
         onChange={(e) => setData("name", e.target.value)}
       />
